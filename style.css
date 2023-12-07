@@ -1,0 +1,392 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+  list-style: none;
+  text-decoration: none;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+}
+
+.container_1 {
+  display: flex;
+  justify-content: space-between;
+  padding: 25px 40px 25px 40px;
+}
+
+.container_1 > img {
+  display: flex;
+  align-items: center;
+}
+
+.container_1 > ul {
+  display: flex;
+  align-items: center;
+}
+
+.container_1 > ul > li {
+  padding-left: 25px;
+}
+
+.container_1 > ul > li > img {
+  width: 26px;
+}
+
+.container_2 {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  overflow: hidden;
+}
+
+header > .container_2 > img {
+  width: 100vw;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-bottom: 1px solid #a5a1a1;
+}
+
+.container_3 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 21px 48px;
+  border-bottom: 1px solid #a5a1a1;
+}
+
+.container_3 > h3 {
+  text-transform: uppercase;
+}
+
+.container_cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 32px 10%;
+}
+
+.container_cards > .container_card {
+  margin-bottom: 32px;
+}
+
+main > .container_cards > .container_card > figure {
+  position: relative;
+  overflow: hidden;
+}
+
+main > .container_cards > .container_card > figure > img {
+  width: 80%;
+  height: auto;
+  display: block;
+  transition: filter 0.3s ease;
+}
+
+main > .container_cards > .container_card > figure::before {
+  content: "";
+  position: absolute;
+  top: 35%;
+  left: 0;
+  width: 80%;
+  height: 80%;
+  background: rgba(92, 167, 32, 0.69);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+main > .container_cards > .container_card:hover > figure::before {
+  opacity: 1;
+}
+
+.container_cards > .container_card > p {
+  font-weight: 600;
+  margin: 8px 0;
+}
+
+.container_cards > .container_card > h3 {
+  font-weight: 600;
+  margin: 8px 0;
+}
+
+.container_cards > .container_card > p > span {
+  color: #5ca720;
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+.container_cards > .container_card > button {
+  background-color: #5ca720;
+  color: #f9f9f9;
+  font-weight: 900;
+  font-size: 17.6px;
+  padding: 9.6px 25.6px;
+  border-radius: 8px;
+  cursor: pointer;
+  border: none;
+}
+
+.container_cards > .container_card > button:hover {
+  background-color: rgba(81, 34, 0, 0.75);
+  color: white;
+}
+
+footer {
+  background-color: rgba(110, 110, 110, 0.25);
+}
+
+.container_4 {
+  border-bottom: 1px solid #a5a1a1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 25.6px 48px;
+}
+
+.container_4 > .container_5 > ul > li {
+  margin-bottom: 9.6px;
+  font-weight: 600;
+}
+
+.container_6 > form {
+  display: flex;
+  flex-direction: column;
+}
+
+.container_6 > form > label {
+  margin-bottom: 9.6px;
+  font-weight: 600;
+}
+
+.container_6 > form > .containerInput {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.container_6 > form > .containerInput > .containerEmail {
+  padding: 16px;
+  width: 320px;
+  background-color: #f9f9f9;
+  border: none;
+  border-radius: 6px 0px 0px 6px;
+}
+
+.container_6 > form > .containerInput > .submit {
+  background-color: #5ca720;
+  color: #f9f9f9;
+  font-weight: 600;
+  padding: 13px 30px 16px 30px;
+  font-size: 16px;
+  border: none;
+  border-radius: 0 6px 6px 0;
+}
+
+.container_7 {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px 48px;
+}
+
+.container_7 > .container_logo {
+  display: flex;
+  align-items: center;
+}
+
+.container_7 > .container_logo > a > img {
+  width: 32px;
+  margin-left: 16px;
+}
+
+.container_7 > .container_payment {
+  display: flex;
+  align-items: center;
+}
+
+.container_7 > .container_payment > a > img {
+  width: 32px;
+  margin-left: 16px;
+}
+
+@media screen and (max-width: 375px) {
+  header > .container_1 {
+    padding: 16px 25.6px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  header > .container_1 > img {
+    width: 96px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  header > .container_1 > ul > li > img {
+    width: 32px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  header > .container_1 > ul > li > img {
+    width: 19.2px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  header > .container_1 > img {
+    width: 64px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  header > .container_2 {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  header > .container_2 > img {
+    width: 150vw;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  header .container_2 > img {
+    width: 150vw;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  main > .container_3 > h3 {
+    font-size: 12.8px;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  main > .container_cards {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    margin: 32px 10%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  main > .container_cards {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    margin: 32px 10%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  main > .container_cards {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    margin: 32px 10%;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  main > .container_cards > .container_card > img {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  main > .container_card > img {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 2560px) {
+  main > .container_card > img {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  main > .container_cards > .container_card > h3 {
+    font-size: 12.8px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  main > .container_cards > .container_card > p {
+    font-size: 12.8px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  main > .container_cards > .container_card > button {
+    font-size: 12.8px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .container_4 {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .container_4 > .container_5 {
+    width: 100%;
+    margin-bottom: 32px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .container_4 > .container_5 > ul > li {
+    font-size: 14.4px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .container_4 > .container_6 {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .container_4 > .container_6 > form > .containerInput {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .container_4 > .container_6 > form > .containerInput > .containerEmail {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .container_4 > .container_6 > form > .containerInput > .containerEmail {
+    margin-bottom: 12px;
+    border-radius: 6px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .container_4 > .container_6 > form > .containerInput > .submit {
+    border-radius: 6px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .container_7 > .container_logo > a > img {
+    width: 25.6px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .container_7 > .container_payment > a > img {
+    width: 25.6px;
+  }
+}
